@@ -1,0 +1,97 @@
+//storageReference
+  var storageRef = firebase.storage().ref("Bilder/Icons");
+  //Strategie
+  storageRef
+    .child("Code/hexagon-2307350_1280.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("code");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Fragen/icon-1332777_1920.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("ask");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Konzept/games-2399904_1920.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("concept");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Error/rejected-2858656_1920.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("error");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Lernen/book-308048_1280.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("learn");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Strategie/paper-1976101_1280.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("strategy");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+
+
+
+    
+  //Motivation
+  storageRef
+    .child("Konzentration/crosshair-467258_1280.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("concentration");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Stress/pain-head-4935624_1920.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("stress");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Motivation/emotion-41728_1280.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("motivation");
+      img.src = url;
+    })
+    .catch(function (error) { });
+
+  storageRef
+    .child("Ernst/man-4484226_1280.png")
+    .getDownloadURL()
+    .then(function (url) {
+      var img = document.getElementById("serious");
+      img.src = url;
+    })
+    .catch(function (error) { });

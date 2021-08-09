@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import React, { useState , useEffect} from "react";
 import {  Link } from "react-router-dom";
 
-
+const db = firebase.firestore();
 
 export function SolutionScreen(props) {
  
@@ -45,7 +45,7 @@ export function SolutionScreen(props) {
     input = "mainCategory/motivation/subCategory/general/generalSolutions";
    
   }
-  const db = firebase.firestore();
+
   
   const [solutions, setSolutions] = useState([]);
 
@@ -69,7 +69,7 @@ export function SolutionScreen(props) {
   return (
     <div className="screen">
       <h1>
-        Lösungsmöglichkeiten
+        Solutions
       </h1>
 
      

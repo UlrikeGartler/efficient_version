@@ -2,7 +2,7 @@ import { Text} from "../core-components/Text";
 import { Button  } from "../core-components/Button";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import firebase from "firebase";
 
 
 

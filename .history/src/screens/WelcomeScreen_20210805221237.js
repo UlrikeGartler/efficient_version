@@ -2,7 +2,7 @@ import { Text} from "../core-components/Text";
 import { Button  } from "../core-components/Button";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Spinner from "./screens/Spinner";
 
 
 
@@ -17,7 +17,7 @@ export function WelcomeScreen(props) {
       <Text text="Viel Spaß beim Arbeiten heute :)"></Text>
       <br></br>
 
-     
+     <Spinner></Spinner>
 
       <Link to="/support">
         <Button text="Weiter"></Button>

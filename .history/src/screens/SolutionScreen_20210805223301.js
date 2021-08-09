@@ -3,10 +3,10 @@ import { Button } from "../core-components/Button.js";
 // import { SolutionTable as SolutionTable } from "../sub-components/SolutionTable.jsx";
 import firebase from "firebase";
 import { connect } from "react-redux";
-import React, { useState , useEffect} from "react";
+import React, { useState } from "react";
 import {  Link } from "react-router-dom";
 
-
+const db = firebase.firestore();
 
 export function SolutionScreen(props) {
  
@@ -45,7 +45,7 @@ export function SolutionScreen(props) {
     input = "mainCategory/motivation/subCategory/general/generalSolutions";
    
   }
-  const db = firebase.firestore();
+
   
   const [solutions, setSolutions] = useState([]);
 
@@ -53,13 +53,13 @@ export function SolutionScreen(props) {
     db.collection(input) 
     .get()
     .then(function (querySnapshot) {
-      const items = []
+      const items = [];
       querySnapshot.forEach(function (doc) {
         items.push(doc.data());
-       
-      })
+        // console.log(doc.label, " => ", doc.data());
+      });
       setSolutions(items);
-    })
+    });
 
   }, []);
 
@@ -69,7 +69,7 @@ export function SolutionScreen(props) {
   return (
     <div className="screen">
       <h1>
-        Lösungsmöglichkeiten
+        Solutions
       </h1>
 
      

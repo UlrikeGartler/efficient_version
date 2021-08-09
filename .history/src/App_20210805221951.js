@@ -12,18 +12,13 @@ import SolutionScreen from "./screens/SolutionScreen";
 import { PraiseScreen } from "./screens/PraiseScreen";
 import { GoodbyeScreen } from "./screens/GoodbyeScreen";
 import { WelcomeScreen } from "./screens/WelcomeScreen";
-//import { BounceLoader, BarLoader, BeatLoader} from 'react-spinners';
+import { BounceLoader, BarLoader, BeatLoader} from 'react-spinners';
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
         <div className="App">
-          {/* <div>
-            <BounceLoader loading></BounceLoader>
-            <BarLoader loading></BarLoader>
-            <BeatLoader loading></BeatLoader>
-          </div> */}
           <Route path="/welcome" exact strict component={WelcomeScreen} />
           <Route path="/support" exact strict component={SupportScreen} />
           <Route

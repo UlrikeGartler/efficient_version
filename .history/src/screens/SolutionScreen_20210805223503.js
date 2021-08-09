@@ -69,7 +69,7 @@ export function SolutionScreen(props) {
   return (
     <div className="screen">
       <h1>
-        Lösungsmöglichkeiten
+        Solutions
       </h1>
 
      

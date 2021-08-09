@@ -37,7 +37,7 @@ export function MainCategoryScreen(props) {
           <br></br>
           Konzepte
           <br></br>
-          Fehler
+          Error
           <br></br>
           Techniken
           <br></br>

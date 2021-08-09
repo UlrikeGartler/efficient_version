@@ -88,7 +88,7 @@ export function SubCategoryScreen(props) {
          
           <br></br>
           <Button
-            text="Ich kann mich nicht motivieren."
+            text="Ich kann mich nicht aufraffen."
             function={props.clickOnMotivation}
           ></Button>
           <br></br>
